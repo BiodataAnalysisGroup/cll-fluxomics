@@ -18,10 +18,7 @@ Chronic Lymphocytic Leukemia (CLL) is a B-Hodgkin’s Lymphoma characterized by 
 Our pipeline focuses on providing a systems-level understanding of the metabolic alterations that Ibrutinib, a BTK inhibitor, is conferring to CLL cells and surrounding cells.
 
 Steps include:
-1. 
-2. 
-3. 
-
+1.
 
 
 ## Installation
