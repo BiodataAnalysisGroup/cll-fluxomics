@@ -46,9 +46,9 @@ Here follows the list of all scripts and their description:
 
 `scFEA_commands.sh` - This bash script calls scFEA tool to infere the flux values for all cells and modules.
 
-- Input: 
+- Input: single cell x genes file, module gene info, stoichiometry matrix
 							 
-- Output: 
+- Output: files with the flux and balance per module
 
 `flux_histograms.R` - This R script plots the histograms of flux of all cell types per module
 
