@@ -44,17 +44,17 @@ Here follows the list of all scripts and their description:
 							 
 - Output:
 
-`03.sh` - This bash script
+`scFEA_commands.sh` - This bash script calls scFEA tool to infere the flux values for all cells and modules.
 
 - Input: 
 							 
 - Output: 
 
-`04.R` - This R script
+`flux_histograms.R` - This R script plots the histograms of flux of all cell types per module
 
-- Input: 
+- Input: flux file, barcodes and cell types, human module info file
 							 
-- Output: 
+- Output: histograms of flux of all cell types per module
 
 
 
