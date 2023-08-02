@@ -30,23 +30,13 @@ seurat_init_list <- c("Day0" = CLL0,
 #a.
 for (i in seq_along(seurat_init_list)) {
   Data <- seurat_init_list[[i]]@assays$SCT@data
-  # Generate a unique CSV filename for each Seurat object (e.g., Data_CLL_D0_1.csv, Data_CLL_D0_2.csv, ...)
   filename <- paste0("Expression Matrix of", i, ".csv")
-  # Write the data to a CSV file
   write.csv(Data, filename, row.names = TRUE)
 }  
 
 #b.
-# Assuming you have a list of Seurat objects called seurat_list
-
-# Loop through each Seurat object in the list
 for (i in seq_along(seurat_init_list)) {
-  # Perform the operation on the current Seurat object
   idents <- Idents(seurat_init_list[[i]])
-  
-  # Create a unique filename for each Seurat object (e.g., Idents_CLL_d0_1.RData, Idents_CLL_d0_2.RData, ...)
-  filename <- paste0("Idents", "_", names(seurat_init_list)[i], ".RData")
-  
-  # Save the idents object to the RData file
-  save(list = "idents", file = filename)
+    filename <- paste0("Idents", "_", names(seurat_init_list)[i], ".RData")
+    save(list = "idents", file = filename)
 }
