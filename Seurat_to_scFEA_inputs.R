@@ -37,6 +37,6 @@ for (i in seq_along(seurat_init_list)) {
 #b.
 for (i in seq_along(seurat_init_list)) {
   idents <- Idents(seurat_init_list[[i]])
-    filename <- paste0("Idents", "_", names(seurat_init_list)[i], ".RData")
-    save(list = "idents", file = filename)
+  filename <- paste0("Idents", "_", names(seurat_init_list)[i], ".RData")
+  save(list = "idents", file = filename)
 }
